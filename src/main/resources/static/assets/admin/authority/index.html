@@ -1,0 +1,26 @@
+<div class="card mt-2">
+    <div class="card-header">
+        AUTHORIZING
+    </div>
+    <div class="card-body p-0">
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th></th>
+                    <th ng-repeat="role in roles">{{role.name}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="acc in admins">
+                    <th class="text-center">{{acc.fullname}}</th>
+                    <th ng-repeat="role in roles">
+                        <input type="checkbox" ng-checked="authority_of(acc,role)" ng-click="authority_changed(acc,role)">
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>

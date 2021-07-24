@@ -1,0 +1,10 @@
+<div class="card border-info">
+	<div class="card-header border-info bg-info">
+		Danh mục
+	</div>
+	<div class="card-body p-0">
+		<ul class="list-group">
+			<a th:each="c : ${cates}" th:href="@{|/product/list?cid=${c.id}|}"><li class="list-group-item border-info">[[${c.name}]]</li></a>
+		</ul>
+	</div>
+</div>
