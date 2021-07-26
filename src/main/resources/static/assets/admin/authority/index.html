@@ -12,9 +12,9 @@
             </thead>
             <tbody>
                 <tr ng-repeat="acc in admins">
-                    <th class="text-center">{{acc.fullname}}</th>
-                    <th ng-repeat="role in roles">
-                        <input type="checkbox" ng-checked="authority_of(acc,role)" ng-click="authority_changed(acc,role)">
+                    <td class="text-center">{{acc.fullname}}</td>
+                    <th ng-repeat="role in roles" class="text-center">
+                        <input type="checkbox" ng-checked="authority_of(acc,role)" ng-click="authority_changed(acc,role)"/>
                     </th>
                 </tr>
             </tbody>

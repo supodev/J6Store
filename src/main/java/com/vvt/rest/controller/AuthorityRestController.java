@@ -19,7 +19,7 @@ import com.vvt.service.AuthorityService;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("rest/authorities")
+@RequestMapping("/rest/authorities")
 public class AuthorityRestController {
 	@Autowired AuthorityService authorityService;
 	

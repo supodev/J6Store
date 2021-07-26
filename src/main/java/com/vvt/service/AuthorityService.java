@@ -6,7 +6,7 @@ import com.vvt.entity.Authority;
 
 public interface AuthorityService {
 
-	List<Authority> findAuthoritiesOfAdministrators();
+	public List<Authority> findAuthoritiesOfAdministrators();
 
 	List<Authority> findAll();
 

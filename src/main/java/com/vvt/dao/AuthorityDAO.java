@@ -9,7 +9,7 @@ import com.vvt.entity.Account;
 import com.vvt.entity.Authority;
 
 public interface AuthorityDAO extends JpaRepository<Authority, Integer>{
-	@Query("select DISTINCT a from Authority a WHERE a.account IN ?1")
+	@Query("SELECT DISTINCT a FROM Authority a WHERE a.account IN ?1")
 	List<Authority> authoritiesOf(List<Account> accounts);
 
 }
