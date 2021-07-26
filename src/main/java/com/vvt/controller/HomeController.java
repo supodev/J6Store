@@ -10,7 +10,7 @@ public class HomeController {
 		return "redirect:/product/list";
 	}
 
-	@RequestMapping({ "/admin", "/admin/home/index" })
+	@RequestMapping({ "/admin", "/admin/home/index"})
 	public String admin() {
 		return "redirect:/assets/admin/index.html";
 	}
